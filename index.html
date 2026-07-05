@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JESUS ME AMA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 520px;
+            padding: 40px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #facc15;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px 25px;
+            border-radius: 16px;
+            margin: 20px 0;
+            font-size: 17.5px;
+            line-height: 1.75;
+            text-align: left;
+            max-height: 65vh;
+            overflow-y: auto;
+        }
+
+        button {
+            padding: 16px 50px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .copy-btn {
+            background: #22c55e;
+            color: white;
+        }
+
+        .copy-btn:hover {
+            background: #16a34a;
+            transform: scale(1.05);
+        }
+
+        .success { color: #4ade80; margin: 12px 0; }
+        .error { color: #f87171; margin: 12px 0; }
+    </style>
+</head>
+<body>
+    <!-- Tela 1: Senha -->
+    <div class="container" id="screen1">
+        <h1>Digite a senha</h1>
+        <input type="password" id="passwordInput" placeholder="Senha" style="width: 100%; padding: 16px; font-size: 18px; border-radius: 12px; border: none; text-align: center; margin-bottom: 20px;">
+        <button onclick="checkPassword()" style="background: #facc15; color: #1e40af;">Entrar</button>
+        <div class="error" id="errorMessage"></div>
+    </div>
+
+    <!-- Tela 2: Mensagem -->
+    <div class="container" id="screen2" style="display: none;">
+        <h1>Mensagem Especial</h1>
+        
+        <div class="message-box" id="messageText">
+CUTSCENE FINAL - "O RETORNO DA GUERRA"
+CUTSCENE LOKA - "HINDRINGR STRÍÐSINS" (ou similar em tom épico: "Aptrkváma Stríðsins")
+[Cena escura. Vento. Música épica e sombria começa baixo]
+[Narrador / General (rödd þreytt, næstum hvíslandi)]
+Eftir mörg ár og mörg ár af stríði stöðugu, óvinr minn leitar eigi lengur stríðsins, stríðið er sigrað, en nú sé ek... [pása. Andardráttur þungur]
+... hversu þeir góðu árin stríðsins voru mér þóknanleg...
+hversu þat stríð gerði mér vel ok gerði mik lifandi aftur,
+nú er eigi er stríð lengur, finn ek sem eitthvat í mér sé dauðt...
+Ek sigraði óvin minn... ok einasta þat sem mér er eftir af honum eru minningar þær er stríðið færði mér,
+ef ek mætti gera eitthvat til at kalla hann aptr til lífs...
+......[LOFTBREYTING. Vinds hvass blæs. Þruma]
+[Ok þá skyndilega kom hvass vindr yfir mik ok sá ek óvin minn upp risandi sem fenix er rís af öskunni.]
+NARRADOR / GENERAL
+[hlær geðveikt, rödd fær styrk]
+Haha, vonin ok ást til stríðsins brann aptr í mér.
+Ok þá bjó ek stöðvarnar svá at óvinr minn mætti koma til mín... [trumba slá. Hermenn ganga]
+Hann mun fyrst þurfa at fara um hinn hræðilega leik minninganna, þar sem hann mun freista hugrænnar ok vitsmunalegrar getu sinnar,
+en sem ek vænti var þat eigi nóg til at halda honum, þá settust allir hermenn mínir í stað til at eyða óvininum aptr... vonandi fell hann eigi í síðasta holuna, ella mun hann reyna allar undraverðar ávexti ok veizlur,
+óvinr minn er þekktur fyrir at gera smátt af ávöxtum... hann er hræðilegur, má ek eigi gleyma fjársjóðnum...
+en hví myndi ek segja þat honum, því hann er óvinr minn... [hvíslar] [áhyggjufullr] [ljós töfranna. Rödd seiðkonunnar í bakgrunni]
+Þar sem hermenn mínir váru eigi nógir til at halda honum, því gerði seiðkonan mín galdr mjök máttugan...
+HAH! Hann varð at ormi smáum, heill nú kkk, þú munt þurfa at eta allan biskvít ríkisins, ella verðr þú smá verkr eilífr... [Þögn. Hissa]
+hversu?... hversu gat hann?...
+Þat skiptir eigi máli, ek mun kreista hann áðr hann kemr hingat,
+ek mun senda þessa lituðu kubba með grunsamlegum formum er passa saman af hreinu tilviljun yfir hann..
+ef hann staflar þeim rétt... [nálægt andliti. Síðasta hvísl]
+... þá mun vera endir minn.
+[Músík hættir. Skjár dimmir]
+Pai. te agradeço pela vida da tua filha... (oração)
+Faðir, ek þakka þér fyrir líf dóttur þinnar, bið ek þik, Dróttinn, blessi hana, Faðir, gæti hennar, fylli hana með kappi ok vilja at leita Dróttins á hverjum degi, Faðir bið ek þik á þessari nótt at þú fyllir hana Heilögum Anda þínum, at þú verndir hana á öllum vegum þínum, at enginn illr komi til dóttur þinnar ok allir þeir er hyggja illt eða vilja illt dóttur þinni fái áform sín spillt. Amen.
+Mensagem final:
+Ek vildi nýta þetta augnablik til at segja þér at ek em með þér, ef þú vilt tala út eða ræða eitthvat, þótt þat sé eitthvat tilviljunar, máttu treysta mér, sérðu?
+        </div>
+
+        <button class="copy-btn" onclick="copyMessage()">Copiar Mensagem</button>
+        <div id="status"></div>
+
+        <div style="margin-top: 25px; font-size: 15px; opacity: 0.9;">
+            Que a paz de Cristo esteja com você ❤️
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            if (document.getElementById('passwordInput').value.trim() === "JESUS-É-BOM") {
+                document.getElementById('screen1').style.display = 'none';
+                document.getElementById('screen2').style.display = 'block';
+            } else {
+                const err = document.getElementById('errorMessage');
+                err.textContent = "Senha incorreta.";
+                setTimeout(() => err.textContent = "", 2500);
+            }
+        }
+
+        async function copyMessage() {
+            const text = document.getElementById('messageText').innerText;
+            const status = document.getElementById('status');
+
+            try {
+                await navigator.clipboard.writeText(text);
+                status.innerHTML = '<span class="success">✅ Mensagem copiada com sucesso!</span>';
+            } catch (e) {
+                try {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = text;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    status.innerHTML = '<span class="success">✅ Mensagem copiada!</span>';
+                } catch (err) {
+                    status.innerHTML = '<span class="error">Erro ao copiar :( <br><small>Tente abrir com servidor local (python -m http.server)</small></span>';
+                }
+            }
+            setTimeout(() => status.innerHTML = '', 4000);
+        }
+
+        document.getElementById('passwordInput').addEventListener('keypress', e => {
+            if (e.key === 'Enter') checkPassword();
+        });
+
+        window.onload = () => document.getElementById('passwordInput').focus();
+    </script>
+</body>
+</html>
